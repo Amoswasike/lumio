@@ -1,0 +1,9 @@
+{
+  "name": "Lumio Finance",
+  "short_name": "Lumio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "description": "Personal finance management with Lumio."
+}

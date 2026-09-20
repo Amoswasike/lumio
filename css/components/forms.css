@@ -1,0 +1,18 @@
+/* Typography & Prose Styles */
+.prose {
+  max-width: 800px;
+}
+
+.prose h2 {
+  margin-top: 38px;
+  font-size: 1.7rem;
+}
+
+.prose p,
+.prose li {
+  color: var(--color-muted);
+}
+
+.prose li {
+  margin: 8px 0;
+}

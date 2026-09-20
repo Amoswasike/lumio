@@ -1,0 +1,40 @@
+/* Feature Page Layouts */
+.feature-detail-grid {
+  margin-top: 0;
+}
+
+/* Large Steps Component */
+.steps-large {
+  max-width: 850px;
+}
+
+.steps-large article {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 24px;
+  min-width: 0;
+  padding: 34px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.steps-large article:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Step Number Badge */
+.steps-large article > span {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: var(--color-brand-green);
+}
+
+/* Step Content Typography */
+.steps-large h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  text-wrap: balance;
+}
+
+.steps-large p {
+  text-wrap: pretty;
+}

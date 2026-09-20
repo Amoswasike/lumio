@@ -1,0 +1,13 @@
+# Lumio Finance public website
+# Keep the marketing site discoverable while preventing the private app area
+# from being indexed as public search content.
+
+User-agent: *
+Allow: /
+Disallow: /app/
+
+# Keep common private/development files out of crawlers.
+Disallow: /404.html
+Disallow: /assets/private/
+
+Sitemap: https://YOUR-DOMAIN/sitemap.xml

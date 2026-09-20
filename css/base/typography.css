@@ -1,0 +1,42 @@
+/* Body & Typography Base */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Heading & Paragraph Resets */
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* Headings Base Formatting */
+h1,
+h2,
+h3 {
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+/* Specific Element Typography */
+h1 {
+  font-size: clamp(2.7rem, 6vw, 5.2rem);
+  max-width: 760px;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+p {
+  color: var(--color-muted);
+}

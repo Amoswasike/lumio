@@ -1,0 +1,174 @@
+@import url("base/reset.css");
+@import url("base/variables.css");
+@import url("base/typography.css");
+@import url("base/base.css");
+@import url("layout/header.css");
+@import url("layout/footer.css");
+@import url("layout/sections.css");
+@import url("components/buttons.css");
+@import url("components/cards.css");
+@import url("components/faq.css");
+@import url("components/forms.css");
+@import url("components/product-showcase.css");
+@import url("pages/home.css");
+@import url("pages/features.css");
+@import url("pages/contact.css");
+@import url("pages/legal.css");
+@import url("pages/404.css");
+
+/* ==========================================================================
+   Responsive system
+   ========================================================================== */
+
+/* Tablet & Medium Displays (<= 900px) */
+@media (max-width: 900px) {
+  .hero-grid,
+  .split-section {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .section-heading {
+    margin-bottom: 42px;
+  }
+}
+
+/* Mobile & Small Tablet Displays (<= 700px) */
+@media (max-width: 700px) {
+  /* Layout & Section Spacing */
+  .container {
+    width: min(var(--container), calc(100% - 28px));
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .hero {
+    padding: 70px 0 80px;
+  }
+
+  .page-hero {
+    padding: 70px 0 64px;
+  }
+
+  .section-heading {
+    margin-bottom: 36px;
+    text-align: left;
+  }
+
+  .feature-grid,
+  .feature-detail-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Navigation Bar */
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 68px;
+    right: 14px;
+    left: 14px;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    align-items: stretch;
+    padding: 14px;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav > a:not(.button) {
+    padding: 11px 10px;
+  }
+
+  .nav-signin {
+    margin-left: 0;
+  }
+
+  /* Buttons & Interactions */
+  .button-row {
+    align-items: stretch;
+  }
+
+  .button-row .button,
+  .site-nav .button {
+    width: 100%;
+  }
+
+  .steps-large article {
+    grid-template-columns: 45px 1fr;
+  }
+
+  /* Footer Modifications */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    display: block;
+  }
+
+  .footer-bottom span {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+/* Small Mobile Screens (<= 420px) */
+@media (max-width: 420px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 13vw, 3.3rem);
+  }
+
+  .hero-lead {
+    font-size: 1.05rem;
+  }
+
+  .cta-card {
+    padding: 52px 20px;
+  }
+}
+
+/* Accessibility Preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .button,
+  .feature-card,
+  .detail-card,
+  .info-card {
+    transition: none;
+  }
+}

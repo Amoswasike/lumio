@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Legal pages — Privacy Policy / Terms of Service
+   ========================================================================== */
+
+/* Page Hero Layout */
+.legal-page .page-hero {
+  text-align: center;
+}
+
+.legal-page .page-hero .hero-lead {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+/* Legal Prose Typography */
+.prose {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.prose h2 {
+  margin: 48px 0 14px;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+.prose h3 {
+  margin: 30px 0 10px;
+  font-size: 1.2rem;
+}
+
+.prose p,
+.prose li {
+  color: var(--color-muted);
+}
+
+.prose p {
+  max-width: 78ch;
+}
+
+.prose ul {
+  padding-left: 1.25rem;
+}
+
+.prose li {
+  margin: 9px 0;
+}
+
+.prose strong {
+  color: var(--color-text);
+}
+
+/* Callout & Notice Boxes */
+.legal-note,
+.important-note,
+.notice {
+  margin: 30px 0;
+  padding: 20px 22px;
+  background: #F0F9FF;
+  border: 1px solid #BAE6FD;
+  border-left: 4px solid #38BDF8;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.legal-note p,
+.important-note p,
+.notice p {
+  margin-bottom: 0;
+}

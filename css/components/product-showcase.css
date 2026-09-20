@@ -1,0 +1,440 @@
+/* ==========================================================================
+   PRODUCT SHOWCASE
+   ========================================================================== */
+
+.product-showcase {
+    position: relative;
+
+    margin-top: 48px;
+}
+
+
+/* ==========================================================================
+   PRODUCT WINDOW
+   ========================================================================== */
+
+.product-window {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 20px;
+
+    box-shadow:
+        0 24px 70px rgba(15, 23, 42, 0.12),
+        0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+
+/* ==========================================================================
+   WINDOW BAR
+   ========================================================================== */
+
+.window-bar {
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 16px;
+
+    background: #F8FAFC;
+
+    border-bottom: 1px solid #E2E8F0;
+
+    color: #475569;
+
+    font-size: 0.72rem;
+}
+
+.window-controls {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+.window-controls span {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #CBD5E1;
+}
+
+.window-bar strong {
+    font-weight: 700;
+}
+
+
+/* ==========================================================================
+   SCREENSHOT FRAME
+   ========================================================================== */
+
+.screenshot-frame {
+    background: #F8FAFC;
+
+    overflow: hidden;
+}
+
+.screenshot-frame img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE DASHBOARD SCREENSHOTS
+   ========================================================================== */
+
+.product-showcase-devices {
+    display: grid;
+
+    grid-template-columns: 1.25fr 0.75fr;
+
+    align-items: end;
+
+    gap: 24px;
+
+    width: min(760px, 82%);
+
+    margin: -90px auto 0;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.screenshot-card {
+    margin: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #E2E8F0;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.12);
+
+    overflow: hidden;
+}
+
+.screenshot-card-image {
+    background: #F8FAFC;
+
+    overflow: hidden;
+}
+
+.screenshot-card-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.screenshot-card figcaption {
+    display: grid;
+
+    gap: 5px;
+
+    padding: 16px 18px;
+}
+
+.screenshot-card figcaption strong {
+    color: var(--color-text);
+
+    font-size: 0.9rem;
+}
+
+.screenshot-card figcaption span {
+    color: #64748B;
+
+    font-size: 0.78rem;
+
+    line-height: 1.55;
+}
+
+
+/* ==========================================================================
+   ANALYTICS SHOWCASE
+   ========================================================================== */
+
+.analytics-showcase {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 48px;
+
+    padding: 0 7%;
+}
+
+.analytics-showcase-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 20px;
+
+    background: white;
+
+    box-shadow:
+        0 24px 70px rgba(15, 23, 42, 0.12);
+}
+
+.analytics-showcase-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.analytics-showcase-mobile {
+    position: absolute;
+
+    right: 4%;
+    bottom: -70px;
+
+    width: 20%;
+
+    overflow: hidden;
+
+    border: 7px solid #0F172A;
+    border-radius: 22px;
+
+    background: #0F172A;
+
+    box-shadow:
+        0 24px 50px rgba(15, 23, 42, 0.25);
+}
+
+.analytics-showcase-mobile img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* ==========================================================================
+   ANALYTICS POINTS
+   ========================================================================== */
+
+.analytics-points {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-top: 110px;
+}
+
+
+/* ==========================================================================
+   TRANSACTION SHOWCASE
+   ========================================================================== */
+
+.transaction-showcase {
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.25fr;
+
+    align-items: center;
+
+    gap: 64px;
+}
+
+.transaction-showcase-content {
+    max-width: 460px;
+}
+
+.transaction-showcase-content h2 {
+    margin-bottom: 18px;
+}
+
+.transaction-showcase-content > p:not(.eyebrow) {
+    color: #64748B;
+
+    line-height: 1.75;
+}
+
+.transaction-showcase-image {
+    min-width: 0;
+}
+
+
+/* ==========================================================================
+   SHOWCASE LIST
+   ========================================================================== */
+
+.showcase-list {
+    display: grid;
+
+    gap: 12px;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 28px 0 0;
+}
+
+.showcase-list li {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    color: #334155;
+
+    font-size: 0.92rem;
+
+    line-height: 1.55;
+}
+
+.showcase-list li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+
+    margin-top: 1px;
+
+    border-radius: 50%;
+
+    background: rgba(20, 184, 106, 0.1);
+
+    color: var(--color-brand-green);
+
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 900px) {
+
+    .product-showcase-devices {
+        width: 90%;
+
+        margin-top: -50px;
+    }
+
+    .analytics-showcase {
+        padding: 0;
+    }
+
+    .analytics-showcase-mobile {
+        width: 24%;
+
+        right: 2%;
+        bottom: -50px;
+    }
+
+    .analytics-points {
+        grid-template-columns: repeat(2, 1fr);
+
+        margin-top: 90px;
+    }
+
+    .transaction-showcase {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .transaction-showcase-content {
+        max-width: 680px;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .product-showcase {
+        margin-top: 32px;
+    }
+
+    .product-window {
+        border-radius: 14px;
+    }
+
+    .window-bar {
+        height: 36px;
+
+        padding: 0 10px;
+
+        font-size: 0.65rem;
+    }
+
+    .product-showcase-devices {
+        grid-template-columns: 1fr 0.7fr;
+
+        gap: 12px;
+
+        width: 94%;
+
+        margin-top: -25px;
+    }
+
+    .screenshot-card {
+        border-radius: 12px;
+    }
+
+    .screenshot-card figcaption {
+        padding: 10px;
+    }
+
+    .screenshot-card figcaption strong {
+        font-size: 0.75rem;
+    }
+
+    .screenshot-card figcaption span {
+        display: none;
+    }
+
+    .analytics-showcase {
+        display: block;
+    }
+
+    .analytics-showcase-mobile {
+        position: relative;
+
+        right: auto;
+        bottom: auto;
+
+        width: 45%;
+
+        margin: -80px 0 0 auto;
+    }
+
+    .analytics-points {
+        grid-template-columns: 1fr;
+
+        margin-top: 40px;
+    }
+
+    .transaction-showcase {
+        gap: 28px;
+    }
+
+}

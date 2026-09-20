@@ -1,0 +1,58 @@
+/* FAQ Component Base */
+.faq-list {
+  width: min(100%, 850px);
+  max-width: 850px;
+  margin-inline: auto;
+}
+
+/* Details & Expandable State */
+.faq-list details {
+  padding: 22px 0;
+  border-top: 1px solid var(--color-border);
+  transition: background var(--transition-fast);
+}
+
+.faq-list details:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-list details[open] {
+  background: rgba(248, 250, 252, 0.55);
+}
+
+/* Summary Header & Toggle Marker */
+.faq-list summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  color: var(--color-brand-green);
+  font-size: 1.4rem;
+}
+
+.faq-list details[open] summary::after {
+  content: "−";
+}
+
+.faq-list summary:focus-visible {
+  border-radius: 6px;
+  outline-offset: 6px;
+}
+
+/* Content Panel */
+.faq-list p {
+  margin: 16px 40px 0 0;
+  text-wrap: pretty;
+}

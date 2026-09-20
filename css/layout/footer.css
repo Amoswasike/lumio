@@ -1,0 +1,52 @@
+/* Site Footer Base Layout */
+.site-footer {
+  padding: 72px 0 24px;
+  background: var(--color-dark);
+  color: #CBD5E1;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 48px;
+}
+
+/* Footer Typography & Brand */
+.footer-brand {
+  color: white;
+}
+
+.site-footer p {
+  max-width: 280px;
+  color: #94A3B8;
+}
+
+.site-footer h3 {
+  margin-bottom: 16px;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+}
+
+/* Footer Navigation Links */
+.site-footer a:not(.brand) {
+  display: block;
+  margin: 9px 0;
+  color: #94A3B8;
+  font-size: 0.92rem;
+}
+
+.site-footer a:hover {
+  color: white;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-top: 22px;
+  border-top: 1px solid #243044;
+  color: #64748B;
+  font-size: 0.8rem;
+}

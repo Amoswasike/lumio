@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <meta
+        name="description"
+        content="Learn about Lumio Finance's current data architecture, account access, user-scoped financial records, privacy principles, and product security approach."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0f172a"
+    >
+
+      <!-- =========================================================
+     FAVICON
+========================================================== -->
+
+<link
+    rel="icon"
+    type="image/svg+xml"
+    href="assets/brand/logos/favicon/favicon.svg"
+>
+
+<link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="assets/brand/logos/favicon/favicon-32x32.png"
+>
+
+<link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="assets/brand/logos/favicon/favicon-16x16.png"
+>
+
+<link
+    rel="apple-touch-icon"
+    href="assets/brand/logos/favicon/apple-touch-icon.png"
+>
+
+    <title>
+        Lumio Finance Security & Data Practices
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/main.css"
+    >
+
+    <script
+        type="module"
+        src="js/site.js"
+    ></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a
+    class="brand"
+    href="index.html"
+    aria-label="Lumio Finance home"
+>
+    <span class="brand-mark">
+        <img
+            src="assets/brand/logos/lumio-logo.svg"
+            alt="Lumio Finance"
+        >
+    </span>
+</a>
+
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            data-nav-toggle
+        >
+            <span class="sr-only">
+                Toggle navigation
+            </span>
+
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav
+            class="site-nav"
+            id="site-nav"
+            data-nav
+        >
+            <a href="features.html">Features</a>
+            <a href="how-it-works.html">How it works</a>
+            <a href="security.html">Security</a>
+            <a href="faq.html">FAQ</a>
+
+          <a href="contact.html">Contact</a>
+
+            <a
+                class="nav-signin"
+                href="https://lumio-finance.netlify.app/#/login"
+            >
+                Sign in
+            </a>
+
+            <a
+                class="button button-primary button-small"
+                href="https://lumio-finance.netlify.app/#/register"
+            >
+                Get started
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- =========================================================
+         PAGE HERO
+         ========================================================= -->
+
+    <section class="page-hero">
+
+        <div class="container narrow reveal">
+
+            <p class="eyebrow">
+                SECURITY & DATA PRACTICES
+            </p>
+
+            <h1>
+                Built with clarity and data ownership in mind.
+            </h1>
+
+            <p class="hero-lead">
+                Lumio's security and privacy information is designed
+                to describe what the application actually does today,
+                without making unsupported infrastructure claims.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CORE PRINCIPLES
+         ========================================================= -->
+
+    <section class="section section-soft">
+
+        <div class="container info-grid">
+
+            <article class="info-card reveal">
+
+                <h2>
+                    Account access
+                </h2>
+
+                <p>
+                    Lumio separates the public website from the
+                    authenticated application experience. Account
+                    access and authenticated financial activity belong
+                    to the application layer.
+                </p>
+
+            </article>
+
+
+            <article class="info-card reveal">
+
+                <h2>
+                    User-owned financial records
+                </h2>
+
+                <p>
+                    Authenticated financial records are associated with
+                    the relevant user account. The application is designed
+                    around keeping one user's financial information
+                    separate from another user's information.
+                </p>
+
+            </article>
+
+
+            <article class="info-card reveal">
+
+                <h2>
+                    Controlled application structure
+                </h2>
+
+                <p>
+                    Lumio separates responsibilities between views,
+                    controllers, services, models, storage, and application
+                    state. This structure helps keep financial operations
+                    organized and predictable.
+                </p>
+
+            </article>
+
+
+            <article class="info-card reveal">
+
+                <h2>
+                    Validation and state management
+                </h2>
+
+                <p>
+                    The application uses validation, controlled state
+                    management, and event-driven updates as part of
+                    its current architecture.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CURRENT V1 ARCHITECTURE
+         ========================================================= -->
+
+    <section class="section">
+
+        <div class="container narrow prose reveal">
+
+            <p class="eyebrow">
+                CURRENT V1 ARCHITECTURE
+            </p>
+
+            <h2>
+                How financial data is handled today.
+            </h2>
+
+            <p>
+                The current Lumio V1 application uses a browser-based,
+                client-side data architecture. Financial records are
+                currently stored on the user's device through browser
+                storage rather than through a production cloud database.
+            </p>
+
+            <p>
+                This means the current implementation should not be
+                described as providing the same security infrastructure
+                as a bank or financial institution.
+            </p>
+
+            <p>
+                Users should protect their account credentials and the
+                devices they use to access Lumio.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         WHAT WE DO NOT CLAIM
+         ========================================================= -->
+
+    <section class="section section-soft">
+
+        <div class="container">
+
+            <div class="section-heading centered reveal">
+
+                <p class="eyebrow">
+                    TRANSPARENT PRODUCT CLAIMS
+                </p>
+
+                <h2>
+                    Security claims should match implemented capabilities.
+                </h2>
+
+                <p>
+                    Lumio intentionally avoids describing capabilities
+                    that have not been implemented and verified.
+                </p>
+
+            </div>
+
+
+            <div class="feature-detail-grid">
+
+                <article class="detail-card reveal">
+
+                    <h2>
+                        No bank connection claim
+                    </h2>
+
+                    <p>
+                        Lumio does not currently provide direct bank
+                        synchronization. The public website does not
+                        imply bank connectivity until such a capability
+                        is implemented.
+                    </p>
+
+                </article>
+
+
+                <article class="detail-card reveal">
+
+                    <h2>
+                        No unsupported encryption claim
+                    </h2>
+
+                    <p>
+                        Lumio does not describe the current application
+                        using unsupported claims such as “military-grade
+                        encryption” or “bank-grade security.”
+                    </p>
+
+                </article>
+
+
+                <article class="detail-card reveal">
+
+                    <h2>
+                        No unsupported cloud infrastructure claim
+                    </h2>
+
+                    <p>
+                        The current V1 architecture should not be described
+                        as using cloud synchronization, production databases,
+                        managed backups, or third-party financial infrastructure
+                        unless those capabilities are actually implemented
+                        and verified.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FUTURE SECURITY DOCUMENTATION
+         ========================================================= -->
+
+    <section class="section">
+
+        <div class="container narrow prose reveal">
+
+            <p class="eyebrow">
+                FUTURE ARCHITECTURE
+            </p>
+
+            <h2>
+                Security documentation will evolve with Lumio.
+            </h2>
+
+            <p>
+                As Lumio moves from its current client-side architecture
+                toward a production backend, the security documentation
+                should be updated to describe the actual implementation.
+            </p>
+
+            <p>
+                This may include authentication mechanisms, database
+                access controls, encryption, backups, logging, hosting
+                infrastructure, session management, and account and
+                data-deletion processes once those capabilities exist
+                and have been verified.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         PRODUCT POSITIONING
+         ========================================================= -->
+
+    <section class="section section-soft">
+
+        <div class="container narrow prose reveal">
+
+            <p class="eyebrow">
+                PRODUCT SCOPE
+            </p>
+
+            <h2>
+                Lumio is a personal finance management application.
+            </h2>
+
+            <p>
+                Lumio helps you understand, organize, and manage your
+                everyday finances in one place.
+            </p>
+
+            <p>
+                It is not a bank, investment platform, or financial
+                institution.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CTA
+         ========================================================= -->
+
+    <section class="section">
+
+        <div class="container cta-card reveal">
+
+            <p class="eyebrow">
+                GET STARTED
+            </p>
+
+            <h2>
+                Organize your everyday finances with clarity.
+            </h2>
+
+            <p>
+                Track your money, plan with budgets and goals, manage
+                bills, and understand your financial activity.
+            </p>
+
+            <a
+                class="button button-primary"
+                href="https://lumio-finance.netlify.app/#/register"
+            >
+                Get started with Lumio
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+           <a
+    class="brand footer-brand"
+    href="index.html"
+    aria-label="Lumio Finance home"
+>
+    <span class="brand-mark">
+        <img
+            src="assets/brand/logos/lumio-logo-dark.svg"
+            alt="Lumio Finance"
+        >
+    </span>
+</a>
+
+            <p>
+                Track. Plan. Understand.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Product
+            </h3>
+
+            <a href="features.html">
+                Features
+            </a>
+
+            <a href="how-it-works.html">
+                How it works
+            </a>
+
+            <a href="security.html">
+                Security
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Resources
+            </h3>
+
+            <a href="faq.html">
+                FAQ
+            </a>
+
+          <a href="contact.html">Contact</a>
+
+            <a href="privacy.html">
+                Privacy
+            </a>
+
+            <a href="terms.html">
+                Terms
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Account
+            </h3>
+
+            <a href="https://lumio-finance.netlify.app/#/login">
+                Sign in
+            </a>
+
+            <a href="https://lumio-finance.netlify.app/#/register">
+                Get started
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 Lumio Finance
+        </span>
+
+        <span>
+            Personal finance management for everyday money.
+        </span>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* ==========================================================================
+   SITE HEADER
+   ========================================================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid rgba(226, 232, 240, 0.75);
+}
+
+
+/* ==========================================================================
+   HEADER INNER
+   ========================================================================== */
+
+.header-inner {
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+}
+
+
+/* ==========================================================================
+   BRAND
+   ========================================================================== */
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    color: var(--color-text);
+    text-decoration: none;
+
+    font-weight: 850;
+    font-size: 1.3rem;
+    letter-spacing: -0.04em;
+}
+
+
+/*
+ * Lumio logo container
+ *
+ * The old version used a green square containing the letter "L".
+ * The public website now uses the actual Lumio logo asset.
+ */
+
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    height: 2.25rem;
+
+    flex-shrink: 0;
+}
+
+
+/* Actual Lumio logo */
+
+.brand-mark img {
+    display: block;
+
+    width: auto;
+    height: 100%;
+
+    max-width: 180px;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   SITE NAVIGATION
+   ========================================================================== */
+
+.site-nav {
+    display: flex;
+    align-items: center;
+
+    gap: 26px;
+}
+
+.site-nav > a:not(.button) {
+    color: #334155;
+
+    font-size: 0.94rem;
+    font-weight: 650;
+
+    text-decoration: none;
+
+    transition:
+        color 160ms ease,
+        opacity 160ms ease;
+}
+
+.site-nav > a:not(.button):hover {
+    color: var(--color-brand-green-dark);
+}
+
+
+/* Sign-in spacing */
+
+.nav-signin {
+    margin-left: 8px;
+}
+
+
+/* ==========================================================================
+   MOBILE NAVIGATION TOGGLE
+   ========================================================================== */
+
+.nav-toggle {
+    display: none;
+
+    border: 0;
+    background: none;
+
+    padding: 8px;
+
+    cursor: pointer;
+}
+
+.nav-toggle span:not(.sr-only) {
+    display: block;
+
+    width: 24px;
+    height: 2px;
+
+    background: var(--color-text);
+
+    margin: 5px;
+}
+
+
+/* ==========================================================================
+   FOOTER BRAND
+   ========================================================================== */
+
+/*
+ * The footer uses the same real Lumio logo but can be slightly larger.
+ */
+
+.footer-brand .brand-mark {
+    height: 2.5rem;
+}
+
+.footer-brand .brand-mark img {
+    max-width: 190px;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 640px) {
+
+    .header-inner {
+        min-height: 68px;
+    }
+
+    .brand-mark {
+        height: 2rem;
+    }
+
+    .brand-mark img {
+        max-width: 155px;
+    }
+
+    .footer-brand .brand-mark {
+        height: 2.25rem;
+    }
+
+    .footer-brand .brand-mark img {
+        max-width: 170px;
+    }
+
+}

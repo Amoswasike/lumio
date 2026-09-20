@@ -1,0 +1,103 @@
+/* Layout Grids */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 52px;
+}
+
+.feature-detail-grid,
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* Base Card Styles */
+.feature-card,
+.detail-card,
+.info-card {
+  min-width: 0;
+  height: 100%;
+  padding: 28px;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), 
+              box-shadow var(--transition-fast), 
+              border-color var(--transition-fast);
+}
+
+.feature-card:hover,
+.detail-card:hover,
+.info-card:hover {
+  transform: translateY(-3px);
+  border-color: #B7E7D0;
+  box-shadow: var(--shadow-md);
+}
+
+/* Card Typography & Text Wrapping */
+.feature-card h2,
+.detail-card h2,
+.info-card h2,
+.feature-card h3,
+.detail-card h3,
+.info-card h3 {
+  text-wrap: balance;
+}
+
+.feature-card p,
+.detail-card p,
+.info-card p {
+  font-size: 0.94rem;
+  text-wrap: pretty;
+}
+
+.detail-card h2 {
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+}
+
+.info-card h2 {
+  font-size: 1.35rem;
+}
+
+.feature-card a {
+  color: var(--color-brand-green-dark);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* Feature Icon Badge */
+.feature-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  background: var(--color-brand-green-soft);
+  color: var(--color-brand-green-dark);
+  font-weight: 900;
+}
+
+/* Principles Component */
+.principles {
+  display: grid;
+  gap: 16px;
+}
+
+.principles > div {
+  padding: 22px 0;
+  border-top: 1px solid #263246;
+}
+
+.principles strong {
+  color: #7BE6AE;
+}
+
+.principles h3 {
+  margin: 8px 0;
+}
